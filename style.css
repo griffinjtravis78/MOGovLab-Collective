@@ -1,0 +1,248 @@
+:root {
+    --primary-navy: #0B2545;
+    --accent-green: #137547;
+    --light-bg: #F8F9FA;
+    --card-bg: #FFFFFF;
+    --text-dark: #212529;
+    --text-muted: #6C757D;
+    --border-color: #E2E8F0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--text-dark);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header & Navbar */
+header {
+    background-color: #FFFFFF;
+    border-bottom: 2px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+}
+
+.brand-text {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--primary-navy);
+    letter-spacing: -0.5px;
+}
+
+.brand-text span {
+    color: var(--accent-green);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--primary-navy);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.5rem 0;
+    transition: color 0.2s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--accent-green);
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    list-style: none;
+    min-width: 220px;
+    padding: 0.5rem 0;
+    display: none;
+    border: 1px solid var(--border-color);
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--text-dark);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(19, 117, 71, 0.08);
+    color: var(--accent-green);
+}
+
+/* Main Layout */
+main {
+    flex: 1;
+    max-width: 1200px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--primary-navy), #133a6b);
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 20px rgba(11, 37, 69, 0.15);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    opacity: 0.9;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.card h2 {
+    color: var(--primary-navy);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.card p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+/* Progress Bar Component */
+.progress-container {
+    background: var(--border-color);
+    border-radius: 8px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    margin: 1.5rem 0;
+}
+
+.progress-segment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 0.85rem;
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.seg-watch { background-color: #0B2545; width: 25%; }
+.seg-data { background-color: #133a6b; width: 25%; }
+.seg-systems { background-color: #105c37; width: 25%; }
+.seg-action { background-color: #137547; width: 25%; }
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--primary-navy);
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.btn {
+    background-color: var(--accent-green);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background-color: #0e5835;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-navy);
+    color: white;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    opacity: 0.8;
+}
