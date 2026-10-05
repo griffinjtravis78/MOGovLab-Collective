@@ -49,6 +49,12 @@ header {
     text-decoration: none;
 }
 
+.brand-logo {
+    height: 42px;
+    width: auto;
+    object-fit: contain;
+}
+
 .brand-text {
     font-size: 1.25rem;
     font-weight: 800;
