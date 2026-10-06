@@ -5,10 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volunteer for Research - MOGovLab Collective</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Header & Navigation Right Alignment */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid #eaeaea;
+            background-color: #ffffff;
+        }
+        .logo-container img {
+            height: 45px;
+            width: auto;
+        }
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333333;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        nav a:hover, nav a.active {
+            color: #0066cc;
+        }
+        /* Main Container Styling */
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .volunteer-container {
+            margin-bottom: 40px;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            color: #555;
+            margin-top: 5px;
+            margin-bottom: 30px;
+        }
+        .volunteer-intro, .survey-callout-box, .contact-section-box {
+            background: #f9f9f9;
+            padding: 25px;
+            border-left: 4px solid #0066cc;
+            border-radius: 4px;
+            margin-bottom: 25px;
+        }
+        .survey-callout-box h3, .contact-section-box h3, .volunteer-intro h2 {
+            margin-top: 0;
+            color: #222;
+        }
+        .btn-primary {
+            display: inline-block;
+            background-color: #0066cc;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 15px;
+        }
+        .btn-primary:hover {
+            background-color: #004d99;
+        }
+        .contact-details {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+        .contact-details li {
+            margin-bottom: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #eaeaea;
+        }
+    </style>
 </head>
 <body>
-    <!-- SITE NAVIGATION -->
+
+    <!-- HEADER WITH LOGO AND RIGHT-ALIGNED NAVIGATION -->
     <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="Logo_1.png" alt="MOGovLab Collective Logo"></a>
+        </div>
         <nav>
             <a href="index.html">Home</a>
             <a href="volunteer.html" class="active">Volunteer for Research</a>
@@ -45,5 +131,6 @@
     <footer>
         <p>&copy; 2026 MOGovLab Collective. From public records to public progress.</p>
     </footer>
+
 </body>
 </html>
