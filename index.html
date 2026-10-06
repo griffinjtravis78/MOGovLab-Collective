@@ -5,10 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOGovLab Collective</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Header & Navigation Right Alignment */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid #eaeaea;
+            background-color: #ffffff;
+        }
+        .logo-container img {
+            height: 45px;
+            width: auto;
+        }
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333333;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        nav a:hover, nav a.active {
+            color: #0066cc;
+        }
+        /* Main Container Styling */
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .hero-section {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+        .slogan-text {
+            font-size: 1.2rem;
+            color: #555;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+        .mission-box, .organizing-notice, .pillars-section, .roadmap-section {
+            margin-bottom: 30px;
+        }
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        .pillar-card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-left: 4px solid #0066cc;
+            border-radius: 4px;
+        }
+        .roadmap-image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #eaeaea;
+        }
+    </style>
 </head>
 <body>
-    <!-- SITE NAVIGATION -->
+
+    <!-- HEADER WITH LOGO AND RIGHT-ALIGNED NAVIGATION -->
     <header>
+        <div class="logo-container">
+            <!-- Replace 'logo.png' with your actual uploaded logo file name -->
+            <a href="index.html"><img src="logo.png" alt="MOGovLab Collective Logo"></a>
+        </div>
         <nav>
             <a href="index.html" class="active">Home</a>
             <a href="volunteer.html">Volunteer for Research</a>
@@ -66,7 +142,8 @@
             <p>Visualizing where we've been, our current build phases, and upcoming milestones leading up to our public launch.</p>
             
             <div class="roadmap-image-container">
-                <img src="Porkbun Infrastructure-2026-10-06-130343.jpg" alt="MOGovLab Collective Development Roadmap & Execution Gantt Chart" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                <!-- IMPORTANT: Rename your roadmap image file in GitHub to 'roadmap.jpg' so spaces don't break the link -->
+                <img src="roadmap.jpg" alt="MOGovLab Collective Development Roadmap & Execution Gantt Chart">
             </div>
         </section>
     </main>
@@ -74,5 +151,6 @@
     <footer>
         <p>&copy; 2026 MOGovLab Collective. From public records to public progress.</p>
     </footer>
+
 </body>
 </html>
