@@ -1,34 +1,127 @@
-<!-- HERO / MISSION SECTION -->
-<section class="hero-section">
-    <h1>MOGovLab Collective</h1>
-    <p class="tagline">Data-Driven Civic Research & State Government Transparency</p>
-    
-    <div class="mission-box">
-        <h2>Our Mission & Purpose</h2>
-        <p>The MOGovLab Collective is an independent, non-partisan public-sector research initiative dedicated to modernizing government operations, increasing procurement equity, and evaluating state administrative effectiveness in Missouri. We leverage open data infrastructure, rigorous methodology, and permanent public archiving to empower policymakers, journalists, researchers, and citizens with actionable insights.</p>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOGovLab Collective</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Mermaid.js for the Gantt Chart -->
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+    <!-- SITE NAVIGATION -->
+    <header>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="volunteer.html">Volunteer for Research</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-    <!-- NOTICE OF ORGANIZATION -->
-    <div class="organizing-notice">
-        <p><em>Notice: The MOGovLab Collective is currently in the process of formalizing its legal and administrative structure. Core infrastructure, secure routing, and our public research pipelines are fully active.</em></p>
-    </div>
-</section>
+    <main>
+        <!-- HERO / MISSION SECTION -->
+        <section class="hero-section">
+            <h1>MOGovLab Collective</h1>
+            
+            <!-- OFFICIAL SLOGAN -->
+            <div class="slogan-box">
+                <p class="slogan-text"><em>"From public records to public progress."</em></p>
+            </div>
+            
+            <div class="mission-box">
+                <h2>Our Mission & Purpose</h2>
+                <p>The MOGovLab Collective is an independent, non-partisan public-sector research initiative dedicated to modernizing government operations, increasing procurement equity, and evaluating state administrative effectiveness in Missouri. We leverage open data infrastructure, rigorous methodology, and permanent public archiving to empower policymakers, journalists, researchers, and citizens with actionable insights.</p>
+            </div>
 
-<!-- PROCESS & PILLARS SECTION -->
-<section class="pillars-section">
-    <h2>Our Process & Core Pillars</h2>
-    <div class="pillars-grid">
-        <div class="pillar-card">
-            <h3>1. MOVERS Project</h3>
-            <p>Tracking, analyzing, and mapping state workforce data and administrative movements to evaluate institutional effectiveness and transparency.</p>
-        </div>
-        <div class="pillar-card">
-            <h3>2. WBE Score</h3>
-            <p>Evaluating and benchmarking Women-Owned Business Enterprise participation, equity metrics, and contracting accountability across public systems.</p>
-        </div>
-        <div class="pillar-card">
-            <h3>3. Procurement Gap</h3>
-            <p>Conducting empirical analysis on public sector purchasing and vendor distribution to identify systemic gaps and foster open competition.</p>
-        </div>
-    </div>
-</section>
+            <!-- DEVELOPMENT PHASE NOTICE -->
+            <div class="organizing-notice">
+                <p><em>Status: Currently in active development, establishing our legal, structural, and technical infrastructure ahead of full research deployment.</em></p>
+            </div>
+        </section>
+
+        <!-- PROCESS & CORE PILLARS SECTION -->
+        <section class="pillars-section">
+            <h2>Our Process & Core Pillars</h2>
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <h3>1. MOWatch</h3>
+                    <p><strong>Systemic Surveillance & Oversight:</strong> Monitoring state administrative shifts, public records, and institutional behaviors to maintain continuous transparency and accountability across government agencies.</p>
+                </div>
+                <div class="pillar-card">
+                    <h3>2. MOData</h3>
+                    <p><strong>Open Data Architecture:</strong> Gathering, cleaning, and structuring empirical public datasets—such as workforce metrics and procurement logs—and permanently archiving them via Harvard Dataverse with verified DOIs.</p>
+                </div>
+                <div class="pillar-card">
+                    <h3>3. MOSystems</h3>
+                    <p><strong>Technical Infrastructure:</strong> Building open-source software, secure web applications, and reproducible codebases (hosted on GitHub and Cloudflare) to ensure civic tech tools are robust, secure, and accessible.</p>
+                </div>
+                <div class="pillar-card">
+                    <h3>4. MOActions</h3>
+                    <p><strong>Empirical Impact & Policy Execution:</strong> Translating raw data analysis into actionable policy briefs, structural recommendations, and public transparency initiatives that foster open competition and equitable governance.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEVELOPMENT ROADMAP GANTT CHART -->
+        <section class="roadmap-section">
+            <h2>Development Roadmap & Execution Status</h2>
+            <p>Visualizing where we've been, our current build phases, and upcoming milestones leading up to our public launch.</p>
+            
+            <div class="mermaid">
+gantt
+    title MOGovLab Collective - Development Roadmap & Execution
+    dateFormat  YYYY-MM-DD
+    axisFormat  %b %d
+
+    section Design & Strategy
+    Visual Theme & Branding           :done, des1, 2026-09-01, 2026-09-15
+    Logo Integration                  :done, des2, 2026-09-10, 2026-09-20
+    Core Initiatives Alignment        :done, des3, 2026-09-15, 2026-09-30
+
+    section Infrastructure
+    Phase 1: Repo & Domain (Porkbun)  :done, inf1, 2026-09-20, 2026-10-04
+    Phase 2: Cloudflare & DNS Verify  :done, inf2, 2026-10-01, 2026-10-06
+
+    section Communications
+    Email Routing & Inboxes           :done, comm1, 2026-10-03, 2026-10-06
+
+    section Research & Data
+    Harvard Dataverse Integration     :done, res1, 2026-10-04, 2026-10-06
+
+    section Security & Integrations
+    HTTPS SSL Enforcement             :active, sec1, 2026-10-05, 2026-10-07
+    Formspree Contact Integration     :active, sec2, 2026-10-06, 2026-10-10
+
+    section Legal & Entity
+    Missouri LLC Name Selection       :active, leg1, 2026-10-06, 2026-10-08
+    Articles of Organization Filing   :leg2, 2026-10-08, 2026-10-12
+    EIN Procurement                   :leg3, 2026-10-12, 2026-10-14
+    Operating Agreement Drafting      :leg4, 2026-10-14, 2026-10-18
+
+    section Governance & Acquisition
+    Steering Committee Sizing         :gov1, 2026-10-12, 2026-10-16
+    Volunteer Onboarding & Form Design:acq1, 2026-10-10, 2026-10-15
+    Volunteer Link Integration        :acq2, 2026-10-15, 2026-10-18
+    Civic Tech Platform Listings      :acq3, 2026-10-18, 2026-10-24
+    OSINT & Dark Money Network Outreach :acq4, 2026-10-20, 2026-10-26
+    Academic Outreach Channels        :acq5, 2026-10-20, 2026-10-26
+
+    section Funding
+    Fiscal Sponsorship Pipeline (Model C) :fund1, 2026-10-10, 2026-10-20
+    Grant & Microgrant Targeting      :fund2, 2026-10-12, 2026-10-22
+    Crowdfunding & Donation Links     :fund3, 2026-10-18, 2026-10-24
+
+    section Open for Impact
+    Initial Research Dataset Upload   :milestone, imp1, 2026-10-22, 2026-10-26
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MOGovLab Collective. From public records to public progress.</p>
+    </footer>
+</body>
+</html>
