@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOGovLab Collective</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Include Mermaid.js for the Gantt Chart -->
-    <script type="module">
-        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-        mermaid.initialize({ startOnLoad: true });
-    </script>
 </head>
 <body>
     <!-- SITE NAVIGATION -->
@@ -65,57 +60,13 @@
             </div>
         </section>
 
-        <!-- DEVELOPMENT ROADMAP GANTT CHART -->
+        <!-- DEVELOPMENT ROADMAP VISUAL SECTION -->
         <section class="roadmap-section">
             <h2>Development Roadmap & Execution Status</h2>
             <p>Visualizing where we've been, our current build phases, and upcoming milestones leading up to our public launch.</p>
             
-            <div class="mermaid">
-gantt
-    title MOGovLab Collective - Development Roadmap & Execution
-    dateFormat  YYYY-MM-DD
-    axisFormat  %b %d
-
-    section Design & Strategy
-    Visual Theme & Branding           :done, des1, 2026-09-01, 2026-09-15
-    Logo Integration                  :done, des2, 2026-09-10, 2026-09-20
-    Core Initiatives Alignment        :done, des3, 2026-09-15, 2026-09-30
-
-    section Infrastructure
-    Phase 1: Repo & Domain (Porkbun)  :done, inf1, 2026-09-20, 2026-10-04
-    Phase 2: Cloudflare & DNS Verify  :done, inf2, 2026-10-01, 2026-10-06
-
-    section Communications
-    Email Routing & Inboxes           :done, comm1, 2026-10-03, 2026-10-06
-
-    section Research & Data
-    Harvard Dataverse Integration     :done, res1, 2026-10-04, 2026-10-06
-
-    section Security & Integrations
-    HTTPS SSL Enforcement             :active, sec1, 2026-10-05, 2026-10-07
-    Formspree Contact Integration     :active, sec2, 2026-10-06, 2026-10-10
-
-    section Legal & Entity
-    Missouri LLC Name Selection       :active, leg1, 2026-10-06, 2026-10-08
-    Articles of Organization Filing   :leg2, 2026-10-08, 2026-10-12
-    EIN Procurement                   :leg3, 2026-10-12, 2026-10-14
-    Operating Agreement Drafting      :leg4, 2026-10-14, 2026-10-18
-
-    section Governance & Acquisition
-    Steering Committee Sizing         :gov1, 2026-10-12, 2026-10-16
-    Volunteer Onboarding & Form Design:acq1, 2026-10-10, 2026-10-15
-    Volunteer Link Integration        :acq2, 2026-10-15, 2026-10-18
-    Civic Tech Platform Listings      :acq3, 2026-10-18, 2026-10-24
-    OSINT & Dark Money Network Outreach :acq4, 2026-10-20, 2026-10-26
-    Academic Outreach Channels        :acq5, 2026-10-20, 2026-10-26
-
-    section Funding
-    Fiscal Sponsorship Pipeline (Model C) :fund1, 2026-10-10, 2026-10-20
-    Grant & Microgrant Targeting      :fund2, 2026-10-12, 2026-10-22
-    Crowdfunding & Donation Links     :fund3, 2026-10-18, 2026-10-24
-
-    section Open for Impact
-    Initial Research Dataset Upload   :milestone, imp1, 2026-10-22, 2026-10-26
+            <div class="roadmap-image-container">
+                <img src="Porkbun Infrastructure-2026-10-06-130343.jpg" alt="MOGovLab Collective Development Roadmap & Execution Gantt Chart" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
             </div>
         </section>
     </main>
