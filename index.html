@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOGovLab Collective</title>
-    <link rel="stylesheet" href="style.css">
     <style>
-        /* Header & Navigation Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #222;
+            line-height: 1.6;
+            background-color: #ffffff;
+        }
         header {
             display: flex;
             justify-content: space-between;
@@ -28,7 +34,7 @@
         .brand-title {
             font-size: 1.5rem;
             font-weight: 700;
-            color: #111;
+            color: #002B49;
             letter-spacing: -0.5px;
         }
         nav {
@@ -44,7 +50,6 @@
         nav a:hover, nav a.active {
             color: #0066cc;
         }
-        /* Main Container Styling */
         main {
             max-width: 1000px;
             margin: 40px auto;
@@ -59,6 +64,7 @@
             color: #555;
             margin-top: 5px;
             margin-bottom: 20px;
+            font-style: italic;
         }
         .mission-box, .organizing-notice, .pillars-section, .roadmap-section {
             margin-bottom: 30px;
@@ -73,6 +79,10 @@
             padding: 20px;
             border-left: 4px solid #0066cc;
             border-radius: 4px;
+        }
+        .pillar-card h3 {
+            margin-top: 0;
+            color: #002B49;
         }
         .roadmap-image-container img {
             width: 100%;
@@ -91,7 +101,6 @@
 </head>
 <body>
 
-    <!-- HEADER WITH SIDE-BY-SIDE LOGO/TITLE AND RIGHT-ALIGNED NAVIGATION -->
     <header>
         <div class="logo-title-container">
             <a href="index.html" class="brand-link">
@@ -107,11 +116,9 @@
     </header>
 
     <main>
-        <!-- HERO / MISSION SECTION -->
         <section class="hero-section">
-            <!-- OFFICIAL SLOGAN -->
             <div class="slogan-box">
-                <p class="slogan-text"><em>"From public records to public progress."</em></p>
+                <p class="slogan-text">"From public records to public progress."</p>
             </div>
             
             <div class="mission-box">
@@ -119,13 +126,11 @@
                 <p>The MOGovLab Collective is an independent, non-partisan public-sector research initiative dedicated to modernizing government operations, increasing procurement equity, and evaluating state administrative effectiveness in Missouri. We leverage open data infrastructure, rigorous methodology, and permanent public archiving to empower policymakers, journalists, researchers, and citizens with actionable insights.</p>
             </div>
 
-            <!-- DEVELOPMENT PHASE NOTICE -->
             <div class="organizing-notice">
                 <p><em>Status: Currently in active development, establishing our legal, structural, and technical infrastructure ahead of full research deployment.</em></p>
             </div>
         </section>
 
-        <!-- PROCESS & CORE PILLARS SECTION -->
         <section class="pillars-section">
             <h2>Our Process & Core Pillars</h2>
             <div class="pillars-grid">
@@ -148,7 +153,6 @@
             </div>
         </section>
 
-        <!-- DEVELOPMENT ROADMAP VISUAL SECTION -->
         <section class="roadmap-section">
             <h2>Development Roadmap & Execution Status</h2>
             <p>Visualizing where we've been, our current build phases, and upcoming milestones leading up to our public launch.</p>
