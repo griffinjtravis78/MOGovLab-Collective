@@ -3,37 +3,345 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Surveys - MOGovLab</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Volunteer Intake Survey - MOGovLab Collective</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #222;
+            line-height: 1.6;
+            background-color: #ffffff;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            border-bottom: 1px solid #eaeaea;
+            background-color: #ffffff;
+        }
+        .brand-link {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+        }
+        .brand-logo {
+            height: 45px;
+            width: auto;
+        }
+        .brand-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #002B49;
+            letter-spacing: -0.5px;
+        }
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333333;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        nav a:hover, nav a.active {
+            color: #0066cc;
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .hero-banner {
+            background-color: #002B49;
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            border-radius: 6px;
+        }
+        .hero-banner h1 {
+            margin: 0 0 10px 0;
+            font-size: 2rem;
+        }
+        .hero-banner p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #d1d5db;
+        }
+        .form-section {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 6px;
+            border: 1px solid #eaeaea;
+            margin-bottom: 30px;
+        }
+        .form-section h2 {
+            margin-top: 0;
+            color: #002B49;
+            font-size: 1.3rem;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            height: 120px;
+        }
+        .checkbox-group, .radio-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 5px;
+        }
+        .checkbox-label, .radio-label {
+            font-weight: normal;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            cursor: pointer;
+        }
+        .disclaimer-box {
+            background: #eef2f7;
+            padding: 15px;
+            border-left: 4px solid #002B49;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .disclaimer-box summary {
+            font-weight: bold;
+            color: #002B49;
+            cursor: pointer;
+        }
+        .disclaimer-content {
+            margin-top: 10px;
+            color: #444;
+        }
+        .btn-submit {
+            background-color: #0066cc;
+            color: #ffffff;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+        }
+        .btn-submit:hover {
+            background-color: #004d99;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #eaeaea;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- SITE NAVIGATION & BRANDING -->
     <header>
-        <div class="nav-container">
-            <a href="index.html" class="brand">
+        <div class="logo-title-container">
+            <a href="index.html" class="brand-link">
                 <img src="Logo_1.png" alt="MOGovLab Collective Logo" class="brand-logo">
-                <span class="brand-text">MO<span>GovLab</span> Collective</span>
+                <span class="brand-title">MOGovLab Collective</span>
             </a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">About ▾</a></li>
-                <li class="nav-item"><a href="impact.html" class="nav-link">Impact ▾</a></li>
-                <li class="nav-item"><a href="surveys.html" class="nav-link active">Surveys</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
         </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="volunteer.html" class="active">Volunteer for Research</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
+
     <main>
-        <section class="hero" style="padding: 2.5rem 1rem;">
-            <h1>Research Surveys & Data Gathering</h1>
-            <p>Participate in our active surveys to help gather empirical data for our research projects and collectives.</p>
-        </section>
-        <div class="card">
-            <h2>Active Data Gathering Surveys</h2>
-            <p>We routinely deploy structured surveys to capture professional insights, public administration experiences, and administrative workflow metrics across Missouri.</p>
-            <p style="margin-top: 1rem;">
-                <a href="#" class="btn">View Active Surveys (Coming Soon)</a>
-            </p>
+        <div class="hero-banner">
+            <h1>Volunteer Intake Survey</h1>
+            <p>Join our open-source network of investigators, data analysts, and civic tech developers.</p>
         </div>
+
+        <!-- FORM ACTION: Replace with your Formspree endpoint URL (e.g., https://formspree.io/f/your-id) -->
+        <form action="https://formspree.io/f/your-form-endpoint" method="POST">
+            
+            <!-- SECTION 1: CONTACT & BACKGROUND -->
+            <div class="form-section">
+                <h2>1. Contact & Background Information</h2>
+                
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">City *</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="state">State *</label>
+                    <select id="state" name="state" required>
+                        <option value="">-- Select State --</option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Arizona">Arizona</option>
+                        <option value="Arkansas">Arkansas</option>
+                        <option value="California">California</option>
+                        <option value="Colorado">Colorado</option>
+                        <option value="Connecticut">Connecticut</option>
+                        <option value="Delaware">Delaware</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Idaho">Idaho</option>
+                        <option value="Illinois">Illinois</option>
+                        <option value="Indiana">Indiana</option>
+                        <option value="Iowa">Iowa</option>
+                        <option value="Kansas">Kansas</option>
+                        <option value="Kentucky">Kentucky</option>
+                        <option value="Louisiana">Louisiana</option>
+                        <option value="Maine">Maine</option>
+                        <option value="Maryland">Maryland</option>
+                        <option value="Massachusetts">Massachusetts</option>
+                        <option value="Michigan">Michigan</option>
+                        <option value="Minnesota">Minnesota</option>
+                        <option value="Mississippi">Mississippi</option>
+                        <option value="Missouri">Missouri</option>
+                        <option value="Montana">Montana</option>
+                        <option value="Nebraska">Nebraska</option>
+                        <option value="Nevada">Nevada</option>
+                        <option value="New Hampshire">New Hampshire</option>
+                        <option value="New Jersey">New Jersey</option>
+                        <option value="New Mexico">New Mexico</option>
+                        <option value="New York">New York</option>
+                        <option value="North Carolina">North Carolina</option>
+                        <option value="North Dakota">North Dakota</option>
+                        <option value="Ohio">Ohio</option>
+                        <option value="Oklahoma">Oklahoma</option>
+                        <option value="Oregon">Oregon</option>
+                        <option value="Pennsylvania">Pennsylvania</option>
+                        <option value="Rhode Island">Rhode Island</option>
+                        <option value="South Carolina">South Carolina</option>
+                        <option value="South Dakota">South Dakota</option>
+                        <option value="Tennessee">Tennessee</option>
+                        <option value="Texas">Texas</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Vermont">Vermont</option>
+                        <option value="Virginia">Virginia</option>
+                        <option value="Washington">Washington</option>
+                        <option value="West Virginia">West Virginia</option>
+                        <option value="Wisconsin">Wisconsin</option>
+                        <option value="Wyoming">Wyoming</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Professional Background / Area of Expertise (Check all that apply)</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label"><input type="checkbox" name="expertise" value="Public Administration"> Public Administration / Government Operations</label>
+                        <label class="checkbox-label"><input type="checkbox" name="expertise" value="Finance/Economics"> Finance / Economics</label>
+                        <label class="checkbox-label"><input type="checkbox" name="expertise" value="Science/Geology/Physics/Chemistry/Biology"> Science / Geology / Physics / Chemistry / Biology</label>
+                        <label class="checkbox-label"><input type="checkbox" name="expertise" value="Medicine/Nursing/Physician/Pharmacy"> Medicine / Nursing / Physician / Pharmacy</label>
+                        <label class="checkbox-label"><input type="checkbox" name="expertise" value="Teacher/Principal/School Board"> Teacher / Principal / School Board</label>
+                        <label class="checkbox-label"><input type="checkbox" name="expertise" value="Data Analysis/GIS"> Data Analysis / Statistics / GIS Mapping</label>
+                        <label class="checkbox-label"><input type="checkbox" name="expertise" value="Legal Research/Sunshine Law"> Legal Research / Public Records / Sunshine Law</label>
+                        <label class="checkbox-label"><input type="checkbox" name="expertise" value="Software Development"> Software Development / Python / Web Tools</label>
+                        <label class="checkbox-label"><input type="checkbox" name="expertise" value="Instructional Design"> Technical Writing / Instructional Design / Training</label>
+                        <label class="checkbox-label"><input type="checkbox" name="expertise" value="Investigative Journalism/OSINT"> Investigative Journalism / OSINT Research</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 2: CORE PILLARS -->
+            <div class="form-section">
+                <h2>2. Alignment with Core Pillars</h2>
+                <div class="form-group">
+                    <label>Which MOGovLab Collective pillars are you most interested in supporting? (Select all that apply)</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label"><input type="checkbox" name="pillars" value="MO-Watch"> <strong>Pillar 1: Identification (MO-Watch)</strong> – Uncovering governance transparency gaps and analyzing public records.</label>
+                        <label class="checkbox-label"><input type="checkbox" name="pillars" value="MO-Data"> <strong>Pillar 2: Synthesis (MO-Data)</strong> – Processing empirical datasets and structuring research for academic repositories.</label>
+                        <label class="checkbox-label"><input type="checkbox" name="pillars" value="MO-Systems"> <strong>Pillar 3: Solution Design (MO-Systems)</strong> – Developing administrative blueprints and policy frameworks.</label>
+                        <label class="checkbox-label"><input type="checkbox" name="pillars" value="MO-Action"> <strong>Pillar 4: Implementation & Execution (MO-Action)</strong> – Translating research into policy briefs and educational media.</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 3: AVAILABILITY & MOTIVATION -->
+            <div class="form-section">
+                <h2>3. Availability & Engagement</h2>
+                
+                <div class="form-group">
+                    <label>Estimated Availability</label>
+                    <div class="radio-group">
+                        <label class="radio-label"><input type="radio" name="availability" value="1-3 hours"> 1–3 hours per week (Light support / specific tasks)</label>
+                        <label class="radio-label"><input type="radio" name="availability" value="4-7 hours"> 4–7 hours per week (Regular project contribution)</label>
+                        <label class="radio-label"><input type="radio" name="availability" value="8+ hours"> 8+ hours per week (Core research / development lead)</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="motivation">What prompted your interest in joining the MOGovLab Collective?</label>
+                    <textarea id="motivation" name="motivation"></textarea>
+                </div>
+            </div>
+
+            <!-- SECTION 4: NOTICE & DISCLAIMER -->
+            <div class="form-section">
+                <h2>4. Notice & Volunteer Agreement</h2>
+                
+                <details class="disclaimer-box">
+                    <summary>Click here to read the Notice & Volunteer Disclaimer</summary>
+                    <div class="disclaimer-content">
+                        <p><strong>Independent Research Initiative:</strong> The MOGovLab Collective is an independent, non-partisan public-sector research initiative operating during a formal development phase. Participation as a volunteer does not constitute employment, legal representation, or an official agency appointment with the State of Missouri or any government entity.</p>
+                        <p><strong>Data Privacy & Confidentiality:</strong> Information collected in this intake survey is used exclusively for internal research coordination, skill-matching, and communications. We respect volunteer privacy and will not sell, trade, or distribute your personal contact information to external parties.</p>
+                        <p><strong>Compliance with Public Standards:</strong> All research and investigations conducted under the collective's pillars rely strictly on lawfully obtained public records, open data architectures, and transparent methodologies.</p>
+                    </div>
+                </details>
+
+                <div class="form-group">
+                    <label class="checkbox-label" style="font-weight: bold; color: #002B49;">
+                        <input type="checkbox" name="disclaimer_acknowledged" value="Yes" required>
+                        I confirm that I have read, understood, and agree to the Notice & Volunteer Disclaimer above. *
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit Volunteer Application</button>
+        </form>
     </main>
-    <footer><p>&copy; 2026 MOGovLab Collective.</p></footer>
+
+    <footer>
+        <p>&copy; 2026 MOGovLab Collective. From public records to public progress.</p>
+    </footer>
+
 </body>
 </html>
