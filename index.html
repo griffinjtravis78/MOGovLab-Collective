@@ -6,18 +6,30 @@
     <title>MOGovLab Collective</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Header & Navigation Right Alignment */
+        /* Header & Navigation Styling */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 40px;
+            padding: 15px 40px;
             border-bottom: 1px solid #eaeaea;
             background-color: #ffffff;
         }
-        .logo-container img {
+        .brand-link {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+        }
+        .brand-logo {
             height: 45px;
             width: auto;
+        }
+        .brand-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #111;
+            letter-spacing: -0.5px;
         }
         nav {
             display: flex;
@@ -79,10 +91,13 @@
 </head>
 <body>
 
-    <!-- HEADER WITH LOGO AND RIGHT-ALIGNED NAVIGATION -->
+    <!-- HEADER WITH SIDE-BY-SIDE LOGO/TITLE AND RIGHT-ALIGNED NAVIGATION -->
     <header>
-        <div class="logo-container">
-            <a href="index.html"><img src="Logo_1.png" alt="MOGovLab Collective Logo"></a>
+        <div class="logo-title-container">
+            <a href="index.html" class="brand-link">
+                <img src="Logo_1.png" alt="MOGovLab Collective Logo" class="brand-logo">
+                <span class="brand-title">MOGovLab Collective</span>
+            </a>
         </div>
         <nav>
             <a href="index.html" class="active">Home</a>
@@ -94,8 +109,6 @@
     <main>
         <!-- HERO / MISSION SECTION -->
         <section class="hero-section">
-            <h1>MOGovLab Collective</h1>
-            
             <!-- OFFICIAL SLOGAN -->
             <div class="slogan-box">
                 <p class="slogan-text"><em>"From public records to public progress."</em></p>
